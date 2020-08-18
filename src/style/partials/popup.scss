@@ -1,0 +1,177 @@
+.popup-share {
+	position: relative;
+	max-width: 1557px;
+	padding: 0;
+	padding-top: 48px;
+	padding-bottom: 95px;
+	background-color: transparent;
+
+	&__close {
+		width: 34px;
+		height: 34px;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		cursor: pointer;
+
+		&:hover {
+			&::before,
+			&::after {
+				background-color: $yellow;
+			}
+		}
+
+		&::before,
+		&::after {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 5px;
+			background-color: $white;
+			transform: rotate(45deg);
+			position: absolute;
+			top: 12px;
+			transition: background-color 0.3s ease;
+		}
+
+		&::after {
+			transform: rotate(-45deg);
+		}
+	}
+
+	&__refresh {
+		display: flex;
+		align-items: center;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		cursor: pointer;
+
+		&:hover {
+			.popup-share__refresh-icon svg {
+				transform: rotate(360deg);
+			}
+		}
+
+		span {
+			font-size: 20px;
+			color: $white;
+		}
+	}
+
+	&__refresh-icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 65px;
+		height: 65px;
+		background-color: $yellow;
+		border-radius: 50%;
+		margin-right: 23px;
+
+		svg {
+			width: 27px;
+			height: 27px;
+			transition: transform 0.3s ease;
+		}
+	}
+
+	&__outer {
+		display: flex;
+		border-radius: 20px;
+		overflow: hidden;
+	}
+
+	&__col {
+		position: relative;
+
+		&:first-child {
+			width: 64%;
+			padding: 110px 102px 110px 127px;
+			background-color: $white;
+		}
+
+		&:last-child {
+			width: 36%;
+			background-color: #ffee02;
+		}
+	}
+
+	&__bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			object-position: bottom;
+		}
+	}
+
+	&__content {
+		position: relative;
+		text-align: center;
+	}
+
+	&__title {
+		font-family: 'Helvetica Neue Bd';
+		font-size: 39px;
+		text-transform: uppercase;
+	}
+
+	&__discount {
+		font-size: 25px;
+		margin-top: 40px;
+		margin-bottom: 34px;
+
+		span {
+			background-color: $yellow;
+		}
+	}
+
+	&__socials,
+	&__social-icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__social-icon {
+		width: 81px;
+		height: 81px;
+		border-radius: 50%;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+
+		&:hover {
+			background-color: $yellow;
+		}
+	}
+
+	&__text {
+		font-family: 'Helvetica Neue Bd';
+		font-size: 25px;
+		line-height: 30px;
+		padding: 44px 75px 317px;
+
+		span {
+			background-color: $white;
+		}
+	}
+
+	&__product-bg {
+		position: absolute;
+		bottom: 0;
+		right: 17px;
+
+		img {
+			width: 100%;
+		}
+	}
+}

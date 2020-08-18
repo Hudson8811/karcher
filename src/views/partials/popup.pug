@@ -1,0 +1,30 @@
+mixin popup()
+	#popup-share.popup-share(style='display: none;')
+		.popup-share__outer
+			.popup-share__col
+				.popup-share__bg
+					img(src='./img/bg-share.jpg', alt= 'bg-share')
+				.popup-share__content
+					.popup-share__title Моему газону позавидуют даже английские лорды!
+					.popup-share__discount Авторизуйся в любой соцсети, поделись поводом для зависти и получи <span>скидку 10%</span> на покупку техники Karcher
+					.popup-share__socials
+						a.popup-share__social-icon(href='#')
+							img(src='./img/socials/vk.png', alt= 'vk')
+						a.popup-share__social-icon(href='#')
+							img(src='./img/socials/fb.png', alt= 'fb')
+						a.popup-share__social-icon(href='#')
+							img(src='./img/socials/tw.png', alt= 'tw')
+						a.popup-share__social-icon(href='#')
+							img(src='./img/socials/ok.png', alt= 'ok')
+			.popup-share__col
+				.popup-share__text С аккумуляторной <span>газонокосилкой Karcher</span> так легко почувствовать превосходство над всеми соседями!
+													|  Нет надоедливых электрических проводов или опасного бензина. Маневренные и мощные газонокосилки на 18- ти и 36-ти вольтных
+													|  аккумуляторах, обеспечивают идеальный результат кошения при максимальной мобильности.
+				.popup-share__product-bg
+					img(src='./img/roller.png', alt= 'roller')
+
+		.popup-share__refresh
+			.popup-share__refresh-icon
+				svg
+					use(xlink:href='./svg/sprite.svg#refresh')
+			span Попробовать еще раз

@@ -1,0 +1,87 @@
+a {
+	text-decoration: none;
+}
+
+html,
+body {
+	max-width: 100%;
+	height: 100%;
+}
+input, button {
+    -webkit-appearance: none;
+}
+
+input,
+button,
+select,
+textarea {
+	font-size: 16px;
+	line-height: 18px;
+	background-color: transparent;
+	border: 0;
+	border-radius: 0;
+	outline: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	color: $black;
+	background: $white;
+	font-family: 'Helvetica Neue';
+	font-size: 16px;
+}
+
+.main {
+	flex-grow: 1;
+}
+
+.container {
+	box-sizing: border-box;
+	width: 1216px;
+	max-width: 95%;
+	max-width: calc(100% - 60px);
+	margin: 0 auto;
+}
+
+
+#jGrowl {
+	z-index: 999999;
+}
+
+*:focus {
+	outline: none;
+}
+
+.hide {
+	display: none;
+}
+
+
+.svg-def-color{
+	&-football{
+		fill: #009A06;
+		stroke: #009A06;
+	}
+	&-tennis{
+		fill: #E8B500;
+		stroke: #E8B500;
+	}
+	&-hockey{
+		fill: #1D88B6;
+		stroke: #1D88B6;
+	}
+	&-volleyball{
+		fill: #242A76;
+		stroke: #242A76;
+	}
+	&-basketball{
+		fill: #E57E25;
+		stroke: #E57E25;
+	}
+	&-others{
+			fill: #0E3770;
+			stroke: #0E3770;
+	}
+}

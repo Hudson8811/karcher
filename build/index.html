@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:image" content="images/logo.svg">
+    <meta name="format-detection" content="telephone=no">
+    <link href="css/main.css" rel="stylesheet">
+    <!--title= `${page.title}`-->
+  </head>
+  <body>
+    <header class="header"><a class="header__logo" href="#"><img src="./img/logo-maxim.png" alt="logo-1"></a>
+      <nav class="header__menu">
+        <li><a class="header__menu-link header__menu-link--active" href="#">в начало</a></li>
+        <li><a class="header__menu-link" href="#">завидные тренды</a></li>
+        <li><a class="header__menu-link" href="#">генератор зависти соседа</a></li>
+      </nav><a class="header__logo" href="#"><img src="./img/logo-karcher.png" alt="logo-2"></a>
+    </header>
+    <main class="main">
+      <div class="first-screen" style="display: none;">
+        <div class="first-screen__bg"><img src="./img/bg-first.jpg" alt="bg-first"></div>
+        <div class="first-screen__content">
+          <div class="first-screen__title"><span>как вызвать</span> зависть у соседа</div>
+          <div class="first-screen__text">
+            <p>Как перестать быть тем, кто с завистью заглядывает на участок соседу и стать тем, кому завидуют?</p>
+            <p>
+              Кажется, что сравнивать, соревноваться и мериться – просто заложено в мужской природе. Вот почему мы, мужчины, с интересом поглядываем в чужой огород. Пора поменять правила игры и стать тем самым соседом,
+               у которого трава зеленее и газон ровнее!
+            </p>
+          </div>
+        </div>
+        <div class="first-screen__circle-wrapper">
+          <div class="first-screen__circle">
+            <p>смотри <br> <span>топ-6</span> <br> завидных трендов для дачи и сада</p>
+            <svg>
+              <use xlink:href="./svg/sprite.svg#arrow-right"></use>
+            </svg>
+          </div>
+        </div><a class="first-screen__share" data-fancybox href="#popup-share">
+          <svg>
+            <use xlink:href="./svg/sprite.svg#share"></use>
+          </svg></a>
+        <div class="first-screen__copyright">© HSM Production</div>
+      </div>
+      <div class="first-screen first-screen--generator">
+        <div class="first-screen__bg"><img src="./img/bg-first.jpg" alt="bg-first"></div>
+        <div class="first-screen__content">
+          <div class="first-screen__title"><span>генератор</span> зависти соседа</div>
+          <div class="first-screen__text">
+            <p>
+              Хочешь вызвать зависть соседа? Просто кликай на кнопку и получи рандомную причину для зависти. Кстати, каждый, кто пошерит причину зависти, получит <span>10% скидку</span> на покупку техники Kärcher.</p>
+          </div>
+        </div>
+        <div class="first-screen__neighbour"><img src="./img/neighbour.png" alt="neighbour"></div>
+        <div class="first-screen__circle-wrapper">
+          <div class="first-screen__circle">
+            <p><span>жми!</span></p>
+          </div>
+        </div><a class="first-screen__share" data-fancybox href="#popup-share">
+          <svg>
+            <use xlink:href="./svg/sprite.svg#share"></use>
+          </svg></a>
+        <div class="first-screen__copyright">© HSM Production</div>
+      </div>
+    </main>
+    <div class="popup-share" id="popup-share" style="display: none;">
+      <div class="popup-share__outer">
+        <div class="popup-share__col">
+          <div class="popup-share__bg"><img src="./img/bg-share.jpg" alt="bg-share"></div>
+          <div class="popup-share__content">
+            <div class="popup-share__title">Моему газону позавидуют даже английские лорды!</div>
+            <div class="popup-share__discount">Авторизуйся в любой соцсети, поделись поводом для зависти и получи <span>скидку 10%</span> на покупку техники Karcher</div>
+            <div class="popup-share__socials"><a class="popup-share__social-icon" href="#"><img src="./img/socials/vk.png" alt="vk"></a><a class="popup-share__social-icon" href="#"><img src="./img/socials/fb.png" alt="fb"></a><a class="popup-share__social-icon" href="#"><img src="./img/socials/tw.png" alt="tw"></a><a class="popup-share__social-icon" href="#"><img src="./img/socials/ok.png" alt="ok"></a></div>
+          </div>
+        </div>
+        <div class="popup-share__col">
+          <div class="popup-share__text">
+            С аккумуляторной <span>газонокосилкой Karcher</span> так легко почувствовать превосходство над всеми соседями! Нет надоедливых электрических проводов или опасного бензина. Маневренные и мощные газонокосилки на 18- ти и 36-ти вольтных
+             аккумуляторах, обеспечивают идеальный результат кошения при максимальной мобильности.
+          </div>
+          <div class="popup-share__product-bg"><img src="./img/roller.png" alt="roller"></div>
+        </div>
+      </div>
+      <div class="popup-share__refresh">
+        <div class="popup-share__refresh-icon">
+          <svg>
+            <use xlink:href="./svg/sprite.svg#refresh"></use>
+          </svg>
+        </div><span>Попробовать еще раз</span>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
