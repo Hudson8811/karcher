@@ -35,6 +35,11 @@ body {
 
 .main {
 	flex-grow: 1;
+	padding-top: 35px;
+
+	@media (min-width: $dMin) {
+		padding-top: 70px;
+	}
 }
 
 .container {
@@ -54,34 +59,6 @@ body {
 	outline: none;
 }
 
-.hide {
-	display: none;
-}
-
-
-.svg-def-color{
-	&-football{
-		fill: #009A06;
-		stroke: #009A06;
-	}
-	&-tennis{
-		fill: #E8B500;
-		stroke: #E8B500;
-	}
-	&-hockey{
-		fill: #1D88B6;
-		stroke: #1D88B6;
-	}
-	&-volleyball{
-		fill: #242A76;
-		stroke: #242A76;
-	}
-	&-basketball{
-		fill: #E57E25;
-		stroke: #E57E25;
-	}
-	&-others{
-			fill: #0E3770;
-			stroke: #0E3770;
-	}
+.body-scroll-lock {
+	overflow: hidden;
 }

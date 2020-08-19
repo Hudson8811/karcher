@@ -1,10 +1,13 @@
 .popup-share {
 	position: relative;
-	max-width: 1557px;
 	padding: 0;
 	padding-top: 48px;
 	padding-bottom: 95px;
 	background-color: transparent;
+
+	@media (min-width: $dMin) {
+		max-width: 1557px;
+	}
 
 	&__close {
 		width: 34px;
@@ -80,22 +83,35 @@
 
 	&__outer {
 		display: flex;
+		flex-direction: column;
 		border-radius: 20px;
 		overflow: hidden;
+
+		@media (min-width: $dMin) {
+			flex-direction: row;
+		}
 	}
 
 	&__col {
 		position: relative;
+		width: 100%;
 
 		&:first-child {
-			width: 64%;
-			padding: 110px 102px 110px 127px;
+			padding: 30px 30px 210px 30px;
 			background-color: $white;
+
+			@media (min-width: $dMin) {
+				width: 64%;
+				padding: 110px 102px 110px 127px;
+			}
 		}
 
 		&:last-child {
-			width: 36%;
 			background-color: #ffee02;
+
+			@media (min-width: $dMin) {
+				width: 36%;
+			}
 		}
 	}
 
@@ -121,14 +137,22 @@
 
 	&__title {
 		font-family: 'Helvetica Neue Bd';
-		font-size: 39px;
+		font-size: 26px;
 		text-transform: uppercase;
+
+		@media (min-width: $dMin) {
+			font-size: 39px;
+		}
 	}
 
 	&__discount {
-		font-size: 25px;
+		font-size: 16px;
 		margin-top: 40px;
 		margin-bottom: 34px;
+
+		@media (min-width: $dMin) {
+			font-size: 25px;
+		}
 
 		span {
 			background-color: $yellow;
@@ -156,9 +180,15 @@
 
 	&__text {
 		font-family: 'Helvetica Neue Bd';
-		font-size: 25px;
-		line-height: 30px;
-		padding: 44px 75px 317px;
+		font-size: 16px;
+		line-height: 18px;
+		padding: 20px 20px 317px;
+
+		@media (min-width: $dMin) {
+			font-size: 25px;
+			line-height: 30px;
+			padding: 44px 75px 317px;
+		}
 
 		span {
 			background-color: $white;
@@ -168,7 +198,11 @@
 	&__product-bg {
 		position: absolute;
 		bottom: 0;
-		right: 17px;
+		right: 0;
+
+		@media (min-width: $dMin) {
+			right: 17px;
+		}
 
 		img {
 			width: 100%;

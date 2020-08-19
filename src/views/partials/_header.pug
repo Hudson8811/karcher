@@ -1,12 +1,31 @@
 header.header
 	a.header__logo(href='#')
-		img(src='./img/logo-maxim.png', alt= 'logo-1')
+		picture
+			source(media='(min-width: 1024px)', srcset='./img/logo-maxim.png')
+			img(src='./img/logo-maxim-sm.png')
+	.header__burger
+		span
 	nav.header__menu
 		li
-			a.header__menu-link.header__menu-link--active(href='#') в начало
+			a.header__menu-link.header__menu-link--active в начало
 		li
-			a.header__menu-link(href='#') завидные тренды
+			a.header__menu-link завидные тренды
 		li
-			a.header__menu-link(href='#') генератор зависти соседа
+			a.header__menu-link генератор зависти соседа
 	a.header__logo(href='#')
-		img(src='./img/logo-karcher.png', alt= 'logo-2')
+		picture
+			source(media='(min-width: 1024px)', srcset='./img/logo-karcher.png')
+			img(src='./img/logo-karcher-sm.png')
+	nav.header__menu.header__menu--mobile
+		.header__menu-bg
+		.header__menu-content
+			li
+				a.header__menu-link.anchor(href='#section-1') в начало
+			li
+				a.header__menu-link.anchor(href='#section-2') завидные тренды
+			li
+				a.header__menu-link.anchor(href='#section-3') генератор зависти соседа
+		.header__menu-close
+		a.first-screen__share.first-screen__share--mobile(data-fancybox href='#popup-share')
+			svg
+				use(xlink:href='./svg/sprite.svg#share')

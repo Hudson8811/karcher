@@ -1,23 +1,140 @@
 .header {
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 10px 20px 10px 75px;
-	height: 70px;
+	padding: 6px 10px;
+	height: 35px;
 	background-color: #fff;
 	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+
+	@media (min-width: $dMin) {
+		height: 70px;
+		padding: 10px 20px 10px 75px;
+	}
+
+	&__burger {
+		display: flex;
+		align-items: center;
+		width: 15px;
+		height: 12px;
+		position: relative;
+		cursor: pointer;
+
+		@media (min-width: $dMin) {
+			display: none;
+		}
+
+		span {
+			width: 100%;
+			height: 2px;
+			background-color: $black;
+
+			&::before,
+			&::after {
+				content: '';
+				display: block;
+				width: 100%;
+				height: 2px;
+				background-color: $black;
+				position: absolute;
+				left: 0;
+			}
+
+			&::before {
+				top: 0;
+			}
+
+			&::after {
+				bottom: 0;
+			}
+		}
+	}
 
 	&__menu {
-		display: flex;
+		display: none;
 		justify-content: space-between;
 		max-width: 800px;
 		width: 100%;
 		list-style: none;
+
+		@media (min-width: $dMin) {
+			display: flex;
+			padding: 0 20px;
+		}
+
+		&--mobile {
+			width: 100%;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			max-width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transform: translateY(-100%);
+			transition: transform 0.6s ease;
+
+			@media (min-width: $dMin) {
+				display: none;
+			}
+
+			.header__menu-bg {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-color: $yellow;
+
+				&::after {
+					content: '';
+					display: block;
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					background-color: $black;
+					opacity: 0.86;
+				}
+			}
+
+			.header__menu-content {
+				position: relative;
+				text-align: center;
+			}
+
+			li {
+				+ li {
+					margin-top: 35px;
+				}
+
+				a {
+					color: $white;
+				}
+
+				a::after {
+					display: none;
+				}
+			}
+		}
+
+		&--show {
+			transform: translateY(0);
+		}
 	}
 
 	&__menu-link {
 		text-transform: uppercase;
 		color: $black;
+		cursor: pointer;
 
 		&::after {
 			content: '';
@@ -39,6 +156,39 @@
 			&::after {
 				max-width: 100%;
 			}
+		}
+	}
+
+	&__menu-close {
+		width: 34px;
+		height: 34px;
+		position: absolute;
+		top: 30px;
+		right: 20px;
+		cursor: pointer;
+
+		&:hover {
+			&::before,
+			&::after {
+				background-color: $yellow;
+			}
+		}
+
+		&::before,
+		&::after {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 5px;
+			background-color: $white;
+			transform: rotate(45deg);
+			position: absolute;
+			top: 12px;
+			transition: background-color 0.3s ease;
+		}
+
+		&::after {
+			transform: rotate(-45deg);
 		}
 	}
 }

@@ -11,18 +11,41 @@
     <!--title= `${page.title}`-->
   </head>
   <body>
-    <header class="header"><a class="header__logo" href="#"><img src="./img/logo-maxim.png" alt="logo-1"></a>
+    <header class="header"><a class="header__logo" href="#">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="./img/logo-maxim.png"><img src="./img/logo-maxim-sm.png">
+        </picture></a>
+      <div class="header__burger"><span></span></div>
       <nav class="header__menu">
-        <li><a class="header__menu-link header__menu-link--active" href="#">в начало</a></li>
-        <li><a class="header__menu-link" href="#">завидные тренды</a></li>
-        <li><a class="header__menu-link" href="#">генератор зависти соседа</a></li>
-      </nav><a class="header__logo" href="#"><img src="./img/logo-karcher.png" alt="logo-2"></a>
+        <li><a class="header__menu-link header__menu-link--active">в начало</a></li>
+        <li><a class="header__menu-link">завидные тренды</a></li>
+        <li><a class="header__menu-link">генератор зависти соседа</a></li>
+      </nav><a class="header__logo" href="#">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="./img/logo-karcher.png"><img src="./img/logo-karcher-sm.png">
+        </picture></a>
+      <nav class="header__menu header__menu--mobile">
+        <div class="header__menu-bg"></div>
+        <div class="header__menu-content">
+          <li><a class="header__menu-link anchor" href="#section-1">в начало</a></li>
+          <li><a class="header__menu-link anchor" href="#section-2">завидные тренды</a></li>
+          <li><a class="header__menu-link anchor" href="#section-3">генератор зависти соседа</a></li>
+        </div>
+        <div class="header__menu-close"></div><a class="first-screen__share first-screen__share--mobile" data-fancybox href="#popup-share">
+          <svg>
+            <use xlink:href="./svg/sprite.svg#share"></use>
+          </svg></a>
+      </nav>
     </header>
     <main class="main">
-      <div class="first-screen" style="display: none;">
-        <div class="first-screen__bg"><img src="./img/bg-first.jpg" alt="bg-first"></div>
+      <div class="first-screen js-fade" id="section-1">
+        <div class="first-screen__bg">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./img/bg-first.jpg"><img src="./img/bg-first-sm.jpg">
+          </picture>
+        </div>
         <div class="first-screen__content">
-          <div class="first-screen__title"><span>как вызвать</span> зависть у соседа</div>
+          <div class="first-screen__title"><span>как вызвать</span> зависть <br> у соседа</div>
           <div class="first-screen__text">
             <p>Как перестать быть тем, кто с завистью заглядывает на участок соседу и стать тем, кому завидуют?</p>
             <p>
@@ -31,7 +54,7 @@
             </p>
           </div>
         </div>
-        <div class="first-screen__circle-wrapper">
+        <div class="first-screen__circle-wrapper js-to-trends">
           <div class="first-screen__circle">
             <p>смотри <br> <span>топ-6</span> <br> завидных трендов для дачи и сада</p>
             <svg>
@@ -44,27 +67,8 @@
           </svg></a>
         <div class="first-screen__copyright">© HSM Production</div>
       </div>
-      <div class="first-screen first-screen--generator" style="display: none;">
-        <div class="first-screen__bg"><img src="./img/bg-first.jpg" alt="bg-first"></div>
-        <div class="first-screen__content">
-          <div class="first-screen__title"><span>генератор</span> зависти соседа</div>
-          <div class="first-screen__text">
-            <p>
-              Хочешь вызвать зависть соседа? Просто кликай на кнопку и получи рандомную причину для зависти. Кстати, каждый, кто пошерит причину зависти, получит <span>10% скидку</span> на покупку техники Kärcher.</p>
-          </div>
-        </div>
-        <div class="first-screen__neighbour"><img src="./img/neighbour.png" alt="neighbour"></div>
-        <div class="first-screen__circle-wrapper">
-          <div class="first-screen__circle">
-            <p><span>жми!</span></p>
-          </div>
-        </div><a class="first-screen__share" data-fancybox href="#popup-share">
-          <svg>
-            <use xlink:href="./svg/sprite.svg#share"></use>
-          </svg></a>
-        <div class="first-screen__copyright">© HSM Production</div>
-      </div>
-      <div class="trends">
+      <div class="trends js-fade" id="section-2">
+        <div class="trends__title"><span>топ-6</span> <br> завидных трендов для дачи и сада</div>
         <div class="trend">
           <div class="trend__content">
             <div class="trend__step"><span>1</span>/6</div>
@@ -198,6 +202,27 @@
           </div>
           <div class="trend__col"><img src="./img/bg-cols-2.jpg" alt="bg-cols-2"></div>
         </div>
+      </div>
+      <div class="first-screen first-screen--generator js-fade" id="section-3">
+        <div class="first-screen__bg"><img src="./img/bg-first.jpg" alt="bg-first"></div>
+        <div class="first-screen__content">
+          <div class="first-screen__title"><span>генератор</span> зависти соседа</div>
+          <div class="first-screen__neighbour first-screen__neighbour--mobile"><img src="./img/neighbour.png" alt="neighbour"></div>
+          <div class="first-screen__text">
+            <p>
+              Хочешь вызвать зависть соседа? Просто кликай на кнопку и получи рандомную причину для зависти. Кстати, каждый, кто пошерит причину зависти, получит <span>10% скидку</span> на покупку техники Kärcher.</p>
+          </div>
+        </div>
+        <div class="first-screen__neighbour"><img src="./img/neighbour.png" alt="neighbour"></div>
+        <div class="first-screen__circle-wrapper first-screen__circle-wrapper--press">
+          <div class="first-screen__circle">
+            <p><span>жми!</span></p>
+          </div>
+        </div><a class="first-screen__share" data-fancybox href="#popup-share">
+          <svg>
+            <use xlink:href="./svg/sprite.svg#share"></use>
+          </svg></a>
+        <div class="first-screen__copyright first-screen__copyright--mobile">© HSM Production</div>
       </div>
     </main>
     <div class="popup-share" id="popup-share" style="display: none;">

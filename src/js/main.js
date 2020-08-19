@@ -7,3 +7,5 @@
 /* my scripts */
 
 //= partials/components.js
+//= partials/header.js
+//= partials/index.js
