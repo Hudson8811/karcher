@@ -1,11 +1,8 @@
 $(document).ready(function () {
 	$('.header__burger').click(function () {
-		$('.header__menu--mobile').addClass('header__menu--show');
-		$('body').addClass('body-scroll-lock');
-	});
-
-	$('.header__menu-close').click(function () {
-		hideMenu();
+		$(this).toggleClass('open');
+		$('.header__menu--mobile').toggleClass('header__menu--show');
+		$('body').toggleClass('body-scroll-lock');
 	});
 
 	anchorScroll($('.anchor'));
