@@ -93,7 +93,25 @@
 
 		@media (min-width: $dMin) {
 			flex-direction: row;
-			height: 760px;
+			height: 730px;
+		}
+
+		@media (min-width: $dMin) and (max-width: 1349px) {
+			height: 660px;
+		}
+
+		&:nth-child(4) {
+			.popup-share__product-bg {
+				position: relative;
+
+				@media (min-width: $dMin){
+					top: -2.8vw;
+				}
+
+				@media (min-width: $dMin) and (max-width: 1349px) {
+					top: 1.5vw;
+				}
+			}
 		}
 	}
 
@@ -316,6 +334,8 @@
 	}
 
 	&__text {
+		position: relative;
+		z-index: 1;
 		font-family: 'Helvetica Neue Bd';
 		font-size: 16px;
 		line-height: 18px;
@@ -324,7 +344,7 @@
 		@media (min-width: $dMin) {
 			font-size: 25px;
 			line-height: 30px;
-			padding: 44px 70px 20px;
+			padding: 44px 70px 0;
 		}
 
 		@media (min-width: $dMin) and (max-width: 1349px) {
