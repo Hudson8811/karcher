@@ -93,7 +93,7 @@
 
 		@media (min-width: $dMin) {
 			flex-direction: row;
-			height: 720px;
+			height: 760px;
 		}
 	}
 
@@ -102,8 +102,12 @@
 		width: 100%;
 
 		&:first-child {
-			padding: 30px 30px 210px 30px;
+			padding: 30px 30px 310px 30px;
 			background-color: $white;
+
+			@media (min-width: 320px) and (max-width: 700px) {
+				padding-bottom: 210px;
+			}
 
 			@media (min-width: $dMin) {
 				width: 64%;
@@ -128,10 +132,17 @@
 		bottom: 0;
 
 		img {
-			width: 100%;
-			height: 100%;
-			object-fit: contain;
-			object-position: bottom;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 110%;
+			height: auto;
+			margin-left: -10%;
+
+			@media (min-width: $dMin) {
+				width: 100%;
+				margin-left: 0;
+			}
 		}
 	}
 
@@ -147,6 +158,10 @@
 
 		@media (min-width: $dMin) {
 			font-size: 37px;
+		}
+
+		@media (min-width: $dMin) and (max-width: 1349px) {
+			font-size: 30px;
 		}
 	}
 
@@ -212,6 +227,10 @@
 			font-size: 25px;
 		}
 
+		@media (min-width: $dMin) and (max-width: 1349px) {
+			font-size: 20px;
+		}
+
 		span {
 			background-color: $yellow;
 		}
@@ -248,8 +267,15 @@
 		background-position: center;
 		transition: background-color 0.3s ease;
 
+		@media (max-width: 1023px) {
+			width: 40px;
+			height: 40px;
+		}
+
 		&:hover {
-			background-color: $yellow !important;
+			@media (min-width: $dMin) {
+				background-color: $yellow !important;
+			}
 		}
 
 		&:not(:last-child) {
@@ -258,18 +284,34 @@
 
 		&:nth-child(1) {
 			background-image: url("../img/socials/vk.png");
+
+			@media (max-width: 1023px) {
+				background-size: 20px;
+			}
 		}
 
 		&:nth-child(2) {
 			background-image: url("../img/socials/fb.png");
+
+			@media (max-width: 1023px) {
+				background-size: 11px;
+			}
 		}
 
 		&:nth-child(3) {
 			background-image: url("../img/socials/tw.png");
+
+			@media (max-width: 1023px) {
+				background-size: 20px;
+			}
 		}
 
 		&:nth-child(4) {
 			background-image: url("../img/socials/ok.png");
+
+			@media (max-width: 1023px) {
+				background-size: 14px;
+			}
 		}
 	}
 
@@ -283,6 +325,11 @@
 			font-size: 25px;
 			line-height: 30px;
 			padding: 44px 70px 20px;
+		}
+
+		@media (min-width: $dMin) and (max-width: 1349px) {
+			font-size: 20px;
+			line-height: 24px;
 		}
 
 		span {
