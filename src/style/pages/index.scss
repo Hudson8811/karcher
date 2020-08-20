@@ -236,14 +236,14 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		width: 40px;
+		width: 50px;
 		height: 206px;
 		background-color: $black;
 		position: absolute;
-		left: 9px;
-		bottom: 20px;
+		left: 4px;
+		bottom: 19px;
 		padding: 5px 5px 50px 5px;
-		border-radius: 10px;
+		border-radius: 20px;
 		opacity: 0;
 		transition: opacity 0.3s ease;
 	}
@@ -260,18 +260,22 @@
 
 		&:nth-child(1) {
 			background-image: url("../img/socials/vk-white.png");
+			background-size: 20px;
 		}
 
 		&:nth-child(2) {
 			background-image: url("../img/socials/fb-white.png");
+			background-size: 11px;
 		}
 
 		&:nth-child(3) {
 			background-image: url("../img/socials/tw-white.png");
+			background-size: 20px;
 		}
 
 		&:nth-child(4) {
 			background-image: url("../img/socials/ok-white.png");
+			background-size: 14px;
 		}
 	}
 
@@ -662,6 +666,10 @@
 					padding-bottom: 50px;
 				}
 
+				@media (min-width: $dMin) and (max-width: 1349px) {
+					font-size: 20px;
+				}
+
 				p + p {
 					margin-top: 15px;
 
@@ -734,6 +742,10 @@
 					max-width: 830px;
 					padding: 0;
 					text-align: left;
+				}
+
+				@media (min-width: $dMin) and (max-width: 1349px) {
+					font-size: 20px;
 				}
 
 				p + p {
