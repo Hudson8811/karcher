@@ -247,18 +247,19 @@
 	}
 
 	&--generator {
-		height: inherit;
 
 		@media (min-width: $dMin) {
 			display: none;
 		}
 
-		@media (min-width: 1780px) {
-			height: 100%;
-		}
-
 		.first-screen {
 			display: none;
+
+			&__flex {
+				display: flex;
+				align-items: center;
+				height: 100%;
+			}
 
 			&__bg {
 				&::after {
@@ -323,19 +324,21 @@
 				padding: 30px 20px;
 
 				@media (min-width: $dMin) {
-					padding: 222px 84px 253px;
-				}
-
-				@media (min-width: 1600px) {
-					padding: 222px 84px 148px;
+					padding: 73px 86px 0;
 				}
 			}
 
 			&__title {
 				font-size: 43px;
 				line-height: 42.62px;
+				letter-spacing: normal;
 
 				@media (min-width: $dMin) {
+					font-size: 104px;
+					line-height: 108px;
+				}
+
+				@media (min-width: 1600px) {
 					font-size: 130px;
 					line-height: 135px;
 				}
@@ -372,7 +375,7 @@
 					padding-bottom: 267px;
 				}
 
-				@media (min-width: 1600px) and (max-width: 1750px){
+				@media (min-width: $dMin) and (max-width: 1750px){
 					width: 19.3vw;
 					height: 19.3vw;
 				}

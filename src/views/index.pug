@@ -160,21 +160,22 @@ block main
 
 
 	#section-3.first-screen.first-screen--generator.js-fade
-		.first-screen__bg
-			img(src='./img/bg-first.jpg', alt= 'bg-first')
-		.first-screen__content
-			.first-screen__title <span>генератор</span> <br> зависти <br> соседа
-			.first-screen__neighbour.first-screen__neighbour--mobile
+		.first-screen__flex
+			.first-screen__bg
+				img(src='./img/bg-first.jpg', alt= 'bg-first')
+			.first-screen__content
+				.first-screen__title <span>генератор</span> <br> зависти <br> соседа
+				.first-screen__neighbour.first-screen__neighbour--mobile
+					img(src='./img/neighbour.png', alt= 'neighbour')
+				.first-screen__text
+					p Хочешь вызвать зависть соседа? Просто кликай на кнопку и получи рандомную причину для зависти.
+						|  Кстати, каждый, кто пошерит причину зависти, получит <span>10% скидку</span> на покупку техники Kärcher.
+			.first-screen__neighbour
 				img(src='./img/neighbour.png', alt= 'neighbour')
-			.first-screen__text
-				p Хочешь вызвать зависть соседа? Просто кликай на кнопку и получи рандомную причину для зависти.
-					|  Кстати, каждый, кто пошерит причину зависти, получит <span>10% скидку</span> на покупку техники Kärcher.
-		.first-screen__neighbour
-			img(src='./img/neighbour.png', alt= 'neighbour')
-		.first-screen__circle-wrapper.first-screen__circle-wrapper--press(data-fancybox href='#popup-share')
-			.first-screen__circle
-				p <span>жми!</span>
-		a.first-screen__share(data-fancybox href='#popup-share')
-			svg
-				use(xlink:href='./svg/sprite.svg#share')
-		.first-screen__copyright.first-screen__copyright--mobile © HSM Production
+			.first-screen__circle-wrapper.first-screen__circle-wrapper--press(data-fancybox href='#popup-share')
+				.first-screen__circle
+					p <span>жми!</span>
+			a.first-screen__share(data-fancybox href='#popup-share')
+				svg
+					use(xlink:href='./svg/sprite.svg#share')
+			.first-screen__copyright.first-screen__copyright--mobile © HSM Production
