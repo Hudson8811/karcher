@@ -181,6 +181,14 @@
 		@media (min-width: $dMin) and (max-width: 1349px) {
 			font-size: 30px;
 		}
+
+		br {
+			display: none;
+
+			@media (min-width: $dMin) {
+				display: block;
+			}
+		}
 	}
 
 	&__share {
@@ -251,6 +259,14 @@
 
 		span {
 			background-color: $yellow;
+		}
+
+		br {
+			display: none;
+
+			@media (min-width: 1200px) {
+				display: block;
+			}
 		}
 	}
 	&__socials{
