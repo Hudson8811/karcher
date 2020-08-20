@@ -1,27 +1,248 @@
 mixin popup()
 	#popup-share.popup-share(style='display: none;')
-		.popup-share__outer
+		.popup-share__card(style='display: flex;')
 			.popup-share__col
 				.popup-share__bg
 					img(src='./img/bg-share.jpg', alt= 'bg-share')
 				.popup-share__content
 					.popup-share__title Моему газону позавидуют даже английские лорды!
-					.popup-share__discount Авторизуйся в любой соцсети, поделись поводом для зависти и получи <span>скидку 10%</span> на покупку техники Karcher
-					.popup-share__socials
-						a.popup-share__social-icon(href='#')
-							img(src='./img/socials/vk.png', alt= 'vk')
-						a.popup-share__social-icon(href='#')
-							img(src='./img/socials/fb.png', alt= 'fb')
-						a.popup-share__social-icon(href='#')
-							img(src='./img/socials/tw.png', alt= 'tw')
-						a.popup-share__social-icon(href='#')
-							img(src='./img/socials/ok.png', alt= 'ok')
+					.popup-share__auth
+						.popup-share__discount Авторизуйся в любой соцсети, поделись поводом для зависти и <br> получи <span>скидку 10%</span> на покупку техники Karcher
+						.popup-share__socials
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/vk.png', alt= 'vk')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/fb.png', alt= 'fb')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/tw.png', alt= 'tw')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/ok.png', alt= 'ok')
+					.popup-share__share
+						.popup-share__discount А теперь поделись карточкой
+						.popup-share__socials
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/vk.png', alt= 'vk')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/fb.png', alt= 'fb')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/tw.png', alt= 'tw')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/ok.png', alt= 'ok')
+					.popup-share__thanks Спасибо! Промокод отправлен вам на почту
 			.popup-share__col
 				.popup-share__text С аккумуляторной <span>газонокосилкой Karcher</span> так легко почувствовать превосходство над всеми соседями!
 													|  Нет надоедливых электрических проводов или опасного бензина. Маневренные и мощные газонокосилки на 18- ти и 36-ти вольтных
 													|  аккумуляторах, обеспечивают идеальный результат кошения при максимальной мобильности.
 				.popup-share__product-bg
-					img(src='./img/roller.png', alt= 'roller')
+					img(src='./img/cards/product-1.jpg', alt= 'product-1')
+
+		.popup-share__card
+			.popup-share__col
+				.popup-share__bg
+					img(src='./img/cards/card-2.jpg', alt= 'card-2')
+				.popup-share__content
+					.popup-share__title Не хочу говорить, что у меня хороший газон, но вчера ко мне приходили специалисты из гольф-клуба и спрашивали, как им вырастить такой же
+					.popup-share__auth
+						.popup-share__discount Авторизуйся в любой соцсети, поделись поводом для зависти и <br> получи <span>скидку 10%</span> на покупку техники Karcher
+						.popup-share__socials
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/vk.png', alt= 'vk')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/fb.png', alt= 'fb')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/tw.png', alt= 'tw')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/ok.png', alt= 'ok')
+					.popup-share__share
+						.popup-share__discount А теперь поделись карточкой
+						.popup-share__socials
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/vk.png', alt= 'vk')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/fb.png', alt= 'fb')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/tw.png', alt= 'tw')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/ok.png', alt= 'ok')
+					.popup-share__thanks Спасибо! Промокод отправлен вам на почту
+			.popup-share__col
+				.popup-share__text С моим аккумуляторным <span>триммером Karcher</span> я могу не только ровно постричь траву по краям газона, но и добраться до углов и «узких» мест.
+													|  А благодаря эргономичной рукоятке он удобно лежит в руке.
+				.popup-share__product-bg
+					img(src='./img/cards/product-2.jpg', alt= 'product-2')
+
+		.popup-share__card
+			.popup-share__col
+				.popup-share__bg
+					img(src='./img/cards/card-3.jpg', alt= 'card-3')
+				.popup-share__content
+					.popup-share__title Вместо унылого  забора — живая <br> изгородь!
+					.popup-share__auth
+						.popup-share__discount Авторизуйся в любой соцсети, поделись поводом для зависти и <br> получи <span>скидку 10%</span> на покупку техники Karcher
+						.popup-share__socials
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/vk.png', alt= 'vk')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/fb.png', alt= 'fb')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/tw.png', alt= 'tw')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/ok.png', alt= 'ok')
+					.popup-share__share
+						.popup-share__discount А теперь поделись карточкой
+						.popup-share__socials
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/vk.png', alt= 'vk')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/fb.png', alt= 'fb')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/tw.png', alt= 'tw')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/ok.png', alt= 'ok')
+					.popup-share__thanks Спасибо! Промокод отправлен вам на почту
+			.popup-share__col
+				.popup-share__text Границы моей собственности выглядят очень привлекательно! И не в последнюю очередь благодаря аккумуляторному <span>кусторезу Karcher</span>.
+													|  Моя изгородь уложена идеально: листик к листику, все дело в алмазной заточке лезвий.
+				.popup-share__product-bg
+					img(src='./img/cards/product-3.jpg', alt= 'product-3')
+
+		.popup-share__card
+			.popup-share__col
+				.popup-share__bg
+					img(src='./img/cards/card-4.jpg', alt= 'card-4')
+				.popup-share__content
+					.popup-share__title Не встаю на колени  перед сорняками!
+					.popup-share__auth
+						.popup-share__discount Авторизуйся в любой соцсети, поделись поводом для зависти и <br> получи <span>скидку 10%</span> на покупку техники Karcher
+						.popup-share__socials
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/vk.png', alt= 'vk')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/fb.png', alt= 'fb')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/tw.png', alt= 'tw')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/ok.png', alt= 'ok')
+					.popup-share__share
+						.popup-share__discount А теперь поделись карточкой
+						.popup-share__socials
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/vk.png', alt= 'vk')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/fb.png', alt= 'fb')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/tw.png', alt= 'tw')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/ok.png', alt= 'ok')
+					.popup-share__thanks Спасибо! Промокод отправлен вам на почту
+			.popup-share__col
+				.popup-share__text Сорняки знают, кто на моем участке хозяин. С любым нарушившим границы я расправляюсь быстро и безжалостно, ведь у меня в арсенале
+													|  аккумуляторный <span>триммер Karcher</span>, который доберется до самых труднодоступных мест.
+				.popup-share__product-bg
+					img(src='./img/cards/product-2.jpg', alt= 'product-2')
+
+		.popup-share__card
+			.popup-share__col
+				.popup-share__bg
+					img(src='./img/cards/card-5.jpg', alt= 'card-5')
+				.popup-share__content
+					.popup-share__title Никаких опавших листьев на дорожке <br> перед домом!
+					.popup-share__auth
+						.popup-share__discount Авторизуйся в любой соцсети, поделись поводом для зависти и <br> получи <span>скидку 10%</span> на покупку техники Karcher
+						.popup-share__socials
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/vk.png', alt= 'vk')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/fb.png', alt= 'fb')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/tw.png', alt= 'tw')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/ok.png', alt= 'ok')
+					.popup-share__share
+						.popup-share__discount А теперь поделись карточкой
+						.popup-share__socials
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/vk.png', alt= 'vk')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/fb.png', alt= 'fb')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/tw.png', alt= 'tw')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/ok.png', alt= 'ok')
+					.popup-share__thanks Спасибо! Промокод отправлен вам на почту
+			.popup-share__col
+				.popup-share__text Шуршать опавшей листвой? Не на моем участке! <span>Аккумуляторный хозяйственный пылесос WD 1 Compact Battery Set</span> снабжен функцией
+													|  выдувания и гарантирует максимальную свободу действий.
+				.popup-share__product-bg
+					img(src='./img/cards/product-5.jpg', alt= 'product-5')
+
+		.popup-share__card
+			.popup-share__col
+				.popup-share__bg
+					img(src='./img/cards/card-6.jpg', alt= 'card-6')
+				.popup-share__content
+					.popup-share__title На моем участке растут только те цветы, <br> которым я это разрешил. Никаких <br> нелегальных эмигрантов вроде <br> одуванчика, сныти, вьюнка или мятлика!
+					.popup-share__auth
+						.popup-share__discount Авторизуйся в любой соцсети, поделись поводом для зависти и <br> получи <span>скидку 10%</span> на покупку техники Karcher
+						.popup-share__socials
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/vk.png', alt= 'vk')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/fb.png', alt= 'fb')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/tw.png', alt= 'tw')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/ok.png', alt= 'ok')
+					.popup-share__share
+						.popup-share__discount А теперь поделись карточкой
+						.popup-share__socials
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/vk.png', alt= 'vk')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/fb.png', alt= 'fb')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/tw.png', alt= 'tw')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/ok.png', alt= 'ok')
+					.popup-share__thanks Спасибо! Промокод отправлен вам на почту
+			.popup-share__col
+				.popup-share__text «Пусть цветут все цветы!» — говорил Мао Цзэдун, но я придерживаюсь другого мнения и с сорняками расправляюсь при помощи <span>аккумуляторных ножниц для травы и кустарников GSH от Karcher</span>.
+				.popup-share__product-bg
+					img(src='./img/cards/product-6.jpg', alt= 'product-6')
+
+		.popup-share__card
+			.popup-share__col
+				.popup-share__bg
+					img(src='./img/cards/card-7.jpg', alt= 'card-7')
+				.popup-share__content
+					.popup-share__title Когда я стригу газон, об этом не узнают <br> все соседи. А все потому, что моя <br> газонокосилка почти бесшумная
+					.popup-share__auth
+						.popup-share__discount Авторизуйся в любой соцсети, поделись поводом для зависти и <br> получи <span>скидку 10%</span> на покупку техники Karcher
+						.popup-share__socials
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/vk.png', alt= 'vk')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/fb.png', alt= 'fb')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/tw.png', alt= 'tw')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/ok.png', alt= 'ok')
+					.popup-share__share
+						.popup-share__discount А теперь поделись карточкой
+						.popup-share__socials
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/vk.png', alt= 'vk')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/fb.png', alt= 'fb')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/tw.png', alt= 'tw')
+							a.popup-share__social-icon(href='#')
+								img(src='./img/socials/ok.png', alt= 'ok')
+					.popup-share__thanks Спасибо! Промокод отправлен вам на почту
+			.popup-share__col
+				.popup-share__text Маневренные и мощные <span>газонокосилки Karcher</span> на 18- и 36-вольтных аккумуляторах обеспечивают идеальный результат кошения при максимальной мобильности.
+				.popup-share__product-bg
+					img(src='./img/cards/product-1.jpg', alt= 'product-1')
 
 		.popup-share__refresh
 			.popup-share__refresh-icon

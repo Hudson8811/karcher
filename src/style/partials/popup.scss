@@ -81,14 +81,15 @@
 		}
 	}
 
-	&__outer {
-		display: flex;
+	&__card {
+		display: none;
 		flex-direction: column;
 		border-radius: 20px;
 		overflow: hidden;
 
 		@media (min-width: $dMin) {
 			flex-direction: row;
+			height: 720px;
 		}
 	}
 
@@ -102,7 +103,7 @@
 
 			@media (min-width: $dMin) {
 				width: 64%;
-				padding: 110px 102px 110px 127px;
+				padding: 50px 48px;
 			}
 		}
 
@@ -137,12 +138,27 @@
 
 	&__title {
 		font-family: 'Helvetica Neue Bd';
-		font-size: 26px;
+		font-size: 22px;
 		text-transform: uppercase;
 
 		@media (min-width: $dMin) {
-			font-size: 39px;
+			font-size: 37px;
 		}
+	}
+
+	&__share {
+		display: none;
+		.popup-share {
+			&__discount {
+				margin-bottom: 60px;
+			}
+		}
+	}
+
+	&__thanks {
+		display: none;
+		margin-top: 40px;
+		font-size: 25px;
 	}
 
 	&__discount {
@@ -182,12 +198,12 @@
 		font-family: 'Helvetica Neue Bd';
 		font-size: 16px;
 		line-height: 18px;
-		padding: 20px 20px 317px;
+		padding: 20px;
 
 		@media (min-width: $dMin) {
 			font-size: 25px;
 			line-height: 30px;
-			padding: 44px 75px 317px;
+			padding: 44px 70px 20px;
 		}
 
 		span {
@@ -196,16 +212,20 @@
 	}
 
 	&__product-bg {
-		position: absolute;
-		bottom: 0;
-		right: 0;
-
-		@media (min-width: $dMin) {
-			right: 17px;
-		}
+		padding: 40px;
+		padding-top: 0;
 
 		img {
-			width: 100%;
+			width: 50%;
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
+
+			@media (min-width: $dMin) {
+				width: 100%;
+				left: auto;
+				transform: none;
+			}
 		}
 	}
 }
