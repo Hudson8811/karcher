@@ -152,6 +152,44 @@
 			&__discount {
 				margin-bottom: 60px;
 			}
+
+			&__social-icon {
+				background-color: $black;
+
+				&:hover {
+					&:nth-child(1) {
+						background-image: url("../img/socials/vk.png");
+					}
+
+					&:nth-child(2) {
+						background-image: url("../img/socials/fb.png");
+					}
+
+					&:nth-child(3) {
+						background-image: url("../img/socials/tw.png");
+					}
+
+					&:nth-child(4) {
+						background-image: url("../img/socials/ok.png");
+					}
+				}
+
+				&:nth-child(1) {
+					background-image: url("../img/socials/vk-white.png");
+				}
+
+				&:nth-child(2) {
+					background-image: url("../img/socials/fb-white.png");
+				}
+
+				&:nth-child(3) {
+					background-image: url("../img/socials/tw-white.png");
+				}
+
+				&:nth-child(4) {
+					background-image: url("../img/socials/ok-white.png");
+				}
+			}
 		}
 	}
 
@@ -187,10 +225,32 @@
 		height: 81px;
 		border-radius: 50%;
 		cursor: pointer;
+		background-repeat: no-repeat;
+		background-position: center;
 		transition: background-color 0.3s ease;
 
 		&:hover {
-			background-color: $yellow;
+			background-color: $yellow !important;
+		}
+
+		&:not(:last-child) {
+			margin-right: 5px;
+		}
+
+		&:nth-child(1) {
+			background-image: url("../img/socials/vk.png");
+		}
+
+		&:nth-child(2) {
+			background-image: url("../img/socials/fb.png");
+		}
+
+		&:nth-child(3) {
+			background-image: url("../img/socials/tw.png");
+		}
+
+		&:nth-child(4) {
+			background-image: url("../img/socials/ok.png");
 		}
 	}
 
