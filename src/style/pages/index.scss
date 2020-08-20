@@ -761,12 +761,13 @@
 
 		@media (min-width: $dMin) {
 			padding: 135px 133px 148px;
+			height: 278px;
 		}
 
 		.trend {
 			&__product {
 				left: 6vw;
-				bottom: 280px;
+				bottom: 15vw;
 				top: auto;
 			}
 		}
