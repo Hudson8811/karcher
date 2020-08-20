@@ -240,12 +240,13 @@
 		height: 206px;
 		background-color: $black;
 		position: absolute;
-		left: 4px;
+		left: 9px;
 		bottom: 19px;
 		padding: 5px 5px 50px 5px;
-		border-radius: 20px;
+		border-radius: 25px;
 		opacity: 0;
 		transition: opacity 0.3s ease;
+		box-sizing: border-box;
 	}
 
 	&__share-inner-visible {
