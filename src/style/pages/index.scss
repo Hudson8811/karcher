@@ -3,7 +3,14 @@
 
 	@media (min-width: $dMin) {
 		height: 100%;
+		overflow: hidden;
 		//height: calc(100vh - 73px);
+	}
+
+	&__flex {
+		display: flex;
+		align-items: center;
+		height: 100%;
 	}
 
 	&__bg {
@@ -57,7 +64,7 @@
 		padding: 249px 20px 15px;
 
 		@media (min-width: $dMin) {
-			padding: 36px 76px 80px;
+			padding: 0 76px;
 		}
 	}
 
@@ -74,10 +81,14 @@
 			line-height: 106px;
 		}
 
+		@media (min-width: $dMin) and (max-width: 1349px) {
+			font-size: 75px;
+			line-height: 75px;
+		}
+
 		@media (min-width: 1600px) {
-			font-size: 130px;
-			line-height: 134px;
-			letter-spacing: 0.3rem;
+			font-size: 115px;
+			line-height: 118px;
 		}
 
 		span {
@@ -98,6 +109,11 @@
 			font-size: 20px;
 			line-height: 22px;
 			margin-top: 25px;
+		}
+
+		@media (min-width: $dMin) and (max-width: 1349px) {
+			font-size: 17px;
+			line-height: 19px;
 		}
 
 		@media (min-width: 1600px) {
@@ -325,7 +341,7 @@
 				padding: 30px 20px;
 
 				@media (min-width: $dMin) {
-					padding: 73px 86px 0;
+					padding: 0 86px;
 				}
 			}
 
@@ -349,6 +365,12 @@
 				font-size: 25px;
 				line-height: 30px;
 				margin-top: 36px;
+
+				@media (min-width: $dMin) and (max-width: 1349px) {
+					font-size: 20px;
+					line-height: 22px;
+					max-width: 600px;
+				}
 
 				@media (min-width: 1600px) {
 					font-size: 25px;
@@ -573,6 +595,7 @@
 				@media (min-width: $dMin) {
 					font-size: 25px;
 					max-width: 795px;
+					padding-bottom: 50px;
 				}
 
 				p + p {
