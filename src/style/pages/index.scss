@@ -134,7 +134,6 @@
 
 	&__circle-wrapper {
 		display: none;
-		overflow: hidden;
 		position: absolute;
 		top: calc(50% + 15px);
 		right: 0;
@@ -176,6 +175,11 @@
 		position: absolute;
 		right: -54px;
 		cursor: pointer;
+		transition: transform 0.3s ease;
+
+		&:hover {
+			transform: scale(1.1);
+		}
 
 		span {
 			font-size: 48px;
@@ -353,6 +357,11 @@
 				@media (min-width: $dMin) {
 					font-size: 104px;
 					line-height: 108px;
+				}
+
+				@media (min-width: $dMin) and (max-width: 1349px) {
+					font-size: 75px;
+					line-height: 75px;
 				}
 
 				@media (min-width: 1600px) {
