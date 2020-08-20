@@ -133,11 +133,15 @@ $(document).ready(function () {
 				if (description != '') $slink += '&p[summary]='+encodeURIComponent(description); break;
 		}
 
-		if (hash === '') checkAuth();
-		$slink += '&u='+encodeURIComponent(hash);
+		if ($(this).data('mode') == 'nohash'){
+			window.open(socialTypes[socialType]+$slink,socialType,'width=500,height=500,resizable=yes,scrollbars=yes,status=yes');
+		} else {
+			if (hash === '') checkAuth();
+			$slink += '&u='+encodeURIComponent(hash);
+			window.open(socialTypes[socialType]+$slink,socialType,'width=500,height=500,resizable=yes,scrollbars=yes,status=yes');
+			afterShare(socialType);
+		}
 
-		window.open(socialTypes[socialType]+$slink,socialType,'width=500,height=500,resizable=yes,scrollbars=yes,status=yes');
-		afterShare(socialType);
 	});
 
 	function afterShare(social) {
