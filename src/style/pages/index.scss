@@ -262,6 +262,10 @@
 
 					img {
 						width: 100%;
+
+						@media (min-width: $dMin) {
+							width: 50%;
+						}
 					}
 				}
 			}
@@ -288,10 +292,6 @@
 
 			&__text {
 				margin-top: 24px;
-
-				@media (min-width: $dMin) {
-					margin-top: 37px;
-				}
 			}
 
 			&__circle-wrapper {
@@ -482,12 +482,16 @@
 			&__product {
 				@media (min-width: $dMin) {
 					position: relative;
-					top: -166px;
+					top: -144px;
 					left: -36px;
 				}
 
 				img {
-					width: 100%;
+					width: 50%;
+
+					@media (min-width: $dMin) {
+						width: 100%;
+					}
 				}
 			}
 
