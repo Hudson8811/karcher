@@ -319,7 +319,8 @@
 			}
 
 			&__content {
-				position: relative;
+				width: 100%;
+				position: unset;
 				z-index: 1;
 				padding: 30px 20px;
 
@@ -372,19 +373,14 @@
 					left: 50%;
 					transform: translateX(-50%);
 					display: block;
+					padding-top: 23px;
 					padding-bottom: 267px;
 				}
 
 				@media (min-width: $dMin) and (max-width: 1750px){
-					width: 19.3vw;
-					height: 19.3vw;
+					width: 18.3vw;
+					height: 18.3vw;
 				}
-
-				/*@media (min-width: $dMin) and (max-width: 1399px){
-					top: 30px;
-					width: 200px;
-					height: 200px;
-				}*/
 			}
 
 			&__circle {
