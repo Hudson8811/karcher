@@ -15,7 +15,13 @@ $(document).ready(function () {
 			$('.js-fade').fadeOut(200);
 			$('.js-fade').eq(1).fadeIn(400);
 		});
-	} else {
-
 	}
+
+	$('.first-screen__share').mouseenter(function () {
+		$('.first-screen__share-inner').addClass('first-screen__share-inner-visible');
+	});
+
+	$('.first-screen__share-inner').mouseleave(function () {
+		$('.first-screen__share-inner').removeClass('first-screen__share-inner-visible');
+	});
 });

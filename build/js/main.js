@@ -74,23 +74,7 @@ if(css3AnimationIsSupported&&o.allowCss3Support){animate()}else{_startAnimationW
 /* my scripts */
 
 $(document).ready(function () {
-	popupInit($('.first-screen__share'));
 	popupInit($('.first-screen__circle-wrapper--press'));
-	/*$('.first-screen__share').fancybox({
-		touch: false,
-		scrolling: 'no',
-		beforeShow: function(){
-			$("body").css({'overflow-y':'hidden'});
-		},
-		afterClose: function(){
-			$("body").css({'overflow-y':'visible'});
-		},
-		btnTpl : {
-			smallBtn : '<div data-fancybox-close class="popup-share__close"></div>'
-		}
-	});
-
-	$('.first-screen__circle-wrapper--press')*/
 
 	$('.popup-share__refresh').click(function () {
 		$('.popup-share__card:visible').hide().siblings().eq(Math.floor(Math.random() * 6)).css('display', 'flex');
@@ -238,12 +222,8 @@ $(document).ready(function () {
 });
 $(document).ready(function () {
 	$('.header__burger').click(function () {
-		$('.header__menu--mobile').addClass('header__menu--show');
-		$('body').addClass('body-scroll-lock');
-	});
-
-	$('.header__menu-close').click(function () {
-		hideMenu();
+		$(this).toggleClass('open');
+		$('.header__menu--mobile').toggleClass('header__menu--show');
 	});
 
 	anchorScroll($('.anchor'));
@@ -252,6 +232,7 @@ $(document).ready(function () {
 		e.click(function () {
 			if (window.matchMedia('(max-width: 1023px)').matches) {
 				hideMenu();
+				$('.header__burger').removeClass('open');
 			}
 			link = $(this).attr('href');
 			to = $(link).offset().top;
@@ -263,7 +244,6 @@ $(document).ready(function () {
 
 	function hideMenu() {
 		$('.header__menu--mobile').removeClass('header__menu--show');
-		$('body').removeClass('body-scroll-lock');
 	}
 });
 $(document).ready(function () {
@@ -283,7 +263,13 @@ $(document).ready(function () {
 			$('.js-fade').fadeOut(200);
 			$('.js-fade').eq(1).fadeIn(400);
 		});
-	} else {
-
 	}
+
+	$('.first-screen__share').mouseenter(function () {
+		$('.first-screen__share-inner').addClass('first-screen__share-inner-visible');
+	});
+
+	$('.first-screen__share-inner').mouseleave(function () {
+		$('.first-screen__share-inner').removeClass('first-screen__share-inner-visible');
+	});
 });
