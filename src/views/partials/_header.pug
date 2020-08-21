@@ -6,11 +6,11 @@ header.header
 		.icon-right
 	nav.header__menu
 		li
-			a.header__menu-link.header__menu-link--active в начало
+			a.header__menu-link.anchor.header__menu-link--active(href='#first') в начало
 		li
-			a.header__menu-link завидные тренды
+			a.header__menu-link.anchor(href='#trends') завидные тренды
 		li
-			a.header__menu-link генератор зависти соседа
+			a.header__menu-link.anchor(href='#generator') генератор зависти соседа
 	a.header__logo-karcher(href='#')
 		img(src='./img/logo-karcher.png')
 	nav.header__menu.header__menu--mobile
@@ -18,13 +18,13 @@ header.header
 		.header__menu-content
 			li
 				.header__menu-digit 1
-				a.header__menu-link.anchor(href='#section-1') в начало
+				a.header__menu-link.anchor(href='#first') в начало
 			li
 				.header__menu-digit 2
-				a.header__menu-link.anchor(href='#section-2') завидные тренды
+				a.header__menu-link.anchor(href='#trends') завидные тренды
 			li
 				.header__menu-digit 3
-				a.header__menu-link.anchor(href='#section-3') генератор зависти соседа
+				a.header__menu-link.anchor(href='#generator') генератор зависти соседа
 			.header__menu-share-title Поделиться в соцсетях
 			.header__menu-share(data-title="Заголовок share" data-image="" data-url="https://karcher.maximonline.ru/share/")
 				a.header__social-icon.sharing__button.vk(href='javascript:;' data-id="share_vk" data-mode="nohash")

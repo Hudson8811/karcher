@@ -1,4 +1,6 @@
 $(document).ready(function () {
+	new WOW().init();
+
 	popupInit($('.first-screen__circle-wrapper--press'));
 
 	$('.popup-share__refresh').click(function () {

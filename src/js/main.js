@@ -4,6 +4,8 @@
 //= libs/jquery.fancybox.min.js
 //= libs/slick.min.js
 //= libs/jquery.marquee.min.js
+//= libs/wow.min.js
+
 /* my scripts */
 
 //= partials/components.js

@@ -17,21 +17,21 @@
         <div class="icon-right"></div>
       </div>
       <nav class="header__menu">
-        <li><a class="header__menu-link header__menu-link--active">в начало</a></li>
-        <li><a class="header__menu-link">завидные тренды</a></li>
-        <li><a class="header__menu-link">генератор зависти соседа</a></li>
+        <li><a class="header__menu-link anchor header__menu-link--active" href="#first">в начало</a></li>
+        <li><a class="header__menu-link anchor" href="#trends">завидные тренды</a></li>
+        <li><a class="header__menu-link anchor" href="#generator">генератор зависти соседа</a></li>
       </nav><a class="header__logo-karcher" href="#"><img src="./img/logo-karcher.png"></a>
       <nav class="header__menu header__menu--mobile">
         <div class="header__menu-bg"></div>
         <div class="header__menu-content">
           <li>
-            <div class="header__menu-digit">1</div><a class="header__menu-link anchor" href="#section-1">в начало</a>
+            <div class="header__menu-digit">1</div><a class="header__menu-link anchor" href="#first">в начало</a>
           </li>
           <li>
-            <div class="header__menu-digit">2</div><a class="header__menu-link anchor" href="#section-2">завидные тренды</a>
+            <div class="header__menu-digit">2</div><a class="header__menu-link anchor" href="#trends">завидные тренды</a>
           </li>
           <li>
-            <div class="header__menu-digit">3</div><a class="header__menu-link anchor" href="#section-3">генератор зависти соседа</a>
+            <div class="header__menu-digit">3</div><a class="header__menu-link anchor" href="#generator">генератор зависти соседа</a>
           </li>
           <div class="header__menu-share-title">Поделиться в соцсетях</div>
           <div class="header__menu-share" data-title="Заголовок share" data-image="" data-url="https://karcher.maximonline.ru/share/"><a class="header__social-icon sharing__button vk" href="javascript:;" data-id="share_vk" data-mode="nohash"></a><a class="header__social-icon sharing__button fb" href="javascript:;" data-id="share_fb" data-mode="nohash"></a><a class="header__social-icon sharing__button tw" href="javascript:;" data-id="share_tw" data-mode="nohash"></a><a class="header__social-icon sharing__button ok" href="javascript:;" data-id="share_ok" data-mode="nohash"></a></div>
@@ -39,7 +39,7 @@
       </nav>
     </header>
     <main class="main">
-      <div class="first-screen js-fade" id="section-1">
+      <div class="first-screen js-fade" id="first">
         <div class="first-screen__flex">
           <div class="first-screen__bg">
             <picture>
@@ -71,10 +71,10 @@
           <div class="first-screen__copyright">© HSM Production</div>
         </div>
       </div>
-      <div class="trends js-fade" id="section-2">
+      <div class="trends js-fade" id="trends">
         <div class="trends__title"><span>топ-6</span> <br> завидных трендов для дачи и сада</div>
         <div class="trend">
-          <div class="trend__content">
+          <div class="trend__content wow slideInLeft">
             <div class="trend__step"><span>1</span>/6</div>
             <div class="trend__title">Идеальный газон перед домом</div>
             <div class="trend__text">
@@ -83,11 +83,11 @@
             </div>
           </div>
           <div class="trend__grass"><img src="./img/grass.png" alt="grass"></div>
-          <div class="trend__scissors"><img src="./img/scissors.png" alt="scissors"></div>
+          <div class="trend__scissors wow slideInRight"><img src="./img/scissors.png" alt="scissors"></div>
         </div>
         <div class="trend trend--yellow">
-          <div class="trend__product"><img src="./img/roller-big.png" alt="roller"></div>
-          <div class="trend__content">
+          <div class="trend__product wow slideInLeft"><img src="./img/roller-big.png" alt="roller"></div>
+          <div class="trend__content wow slideInRight">
             <div class="trend__text">
               <p>
                 Поддерживать свой газон в нужной форме поможет правильная газонокосилка. Не бензиновая, боже упаси, чтобы не возиться каждый раз с разведением масла и пугать соседей шумом. И не электрическая, чтобы путаться в проводах. Выход – аккумуляторная <span>газонокосилка Karcher</span>.</p>
@@ -97,8 +97,8 @@
           </div>
         </div>
         <div class="trend trend--2">
-          <div class="trend__bg"><img src="./img/bg-2.png" alt="bg-2"></div>
-          <div class="trend__content">
+          <div class="trend__bg wow slideInLeft"><img src="./img/bg-2.png" alt="bg-2"></div>
+          <div class="trend__content wow slideInRight">
             <div class="trend__step"><span>2</span>/6</div>
             <div class="trend__title">Использование на участке вечнозеленых растений и кустарников</div>
             <div class="trend__text">
@@ -113,7 +113,7 @@
           </div>
         </div>
         <div class="trend trend--center">
-          <div class="trend__text">
+          <div class="trend__text wow fadeInUp">
             <p>Выбирай <span>аккумуляторную модель</span> с лезвиями алмазной заточки, которая обеспечит идеальную обрезку без усилий.</p>
             <p>
               Не менее важные показатели хорошего кустореза - малый вес и эргономичная рукоятка, которые смогут обеспечить удобное и безопасное выполнение работ без чрезмерной нагрузки на руки и плечи.</p>
@@ -121,7 +121,7 @@
         </div>
         <div class="trend trend--3">
           <div class="trend__bg"><img src="./img/bg-3.jpg" alt="bg-3"></div>
-          <div class="trend__content">
+          <div class="trend__content wow fadeInUp">
             <div class="trend__step"><span>3</span>/6</div>
             <div class="trend__title">Вертикальный сад</div>
             <div class="trend__text">
@@ -133,7 +133,7 @@
           </div>
         </div>
         <div class="trend trend--4">
-          <div class="trend__content">
+          <div class="trend__content wow slideInLeft">
             <div class="trend__step"><span>4</span>/6</div>
             <div class="trend__title">Пространство под досуг</div>
             <div class="trend__text">
@@ -142,11 +142,11 @@
                а специально предназначенной для эксплуатации на открытом воздухе садовой. И об уходе за этой зоной тоже придется позаботится.
             </div>
           </div>
-          <div class="trend__bg"><img src="./img/bg-4.jpg" alt="bg-4"></div>
+          <div class="trend__bg wow slideInRight"><img src="./img/bg-4.jpg" alt="bg-4"></div>
         </div>
         <div class="trend trend--yellow trend--yellow-2">
-          <div class="trend__product"><img src="./img/trimmer.png" alt="trimmer"></div>
-          <div class="trend__content">
+          <div class="trend__product wow slideInLeft"><img src="./img/trimmer.png" alt="trimmer"></div>
+          <div class="trend__content wow slideInRight">
             <div class="trend__text">
               <p>Добраться до труднодоступных мест за мангалом, где так и норовят вырасти сорняки, поможет легкий и удобный <span>аккумуляторный триммер для стрижки травы</span>.</p>
               <p>
@@ -155,8 +155,8 @@
           </div>
         </div>
         <div class="trend trend--5">
-          <div class="trend__bg"><img src="./img/bg-5.png" alt="bg-5"></div>
-          <div class="trend__content">
+          <div class="trend__bg wow slideInLeft"><img src="./img/bg-5.png" alt="bg-5"></div>
+          <div class="trend__content wow slideInRight">
             <div class="trend__step"><span>5</span>/6</div>
             <div class="trend__title">Часть опавших листьев можно и не убирать</div>
             <div class="trend__text">
@@ -164,11 +164,11 @@
           </div>
         </div>
         <div class="trend trend--center trend--center-2">
-          <div class="trend__text">
+          <div class="trend__text wow fadeInUp">
             А для дорожек вокруг дома есть <span>аккумуляторная воздуходувка</span> Karcher. Она легко и быстро удалит опавшие листья, разберется с обрезками живой изгороди и срезанной травой. А еще без труда справится с сыпучей или рыхлой грязью в доме или гараже.</div>
         </div>
         <div class="trend trend--4 trend--6">
-          <div class="trend__content">
+          <div class="trend__content wow slideInLeft">
             <div class="trend__step"><span>6</span>/6</div>
             <div class="trend__title">Экологическая составляющая</div>
             <div class="trend__text">
@@ -176,38 +176,38 @@
                и не в последнюю очередь садовая техника, работающая от аккумуляторов, а не на бензине.
             </div>
           </div>
-          <div class="trend__bg"><img src="./img/bg-6.png" alt="bg-6"></div>
+          <div class="trend__bg wow slideInRight"><img src="./img/bg-6.png" alt="bg-6"></div>
         </div>
         <div class="trend trend--center trend--center-yellow">
-          <div class="trend__text">
+          <div class="trend__text wow fadeInUp">
             Например, садовая техника Karcher работает на единой платформе <span>Battery Universe</span>, предназначенной более чем для 40 видов инструментов: от ухода за садом и другими зелеными насаждениями до пылесосов для сухой и влажной уборки.</div>
         </div>
         <div class="trend trend--cols">
-          <div class="trend__col">
+          <div class="trend__col wow slideInLeft">
             <div class="trend__text">
               Помимо того, что аккумуляторная садовая техника работает без шума и бензиновых выхлопов, она станет настоящим спасением, если у тебя на участке нет электричества. Независимо от того, каким устройством ты пользуешься, – аккумуляторной газонокосилкой,
                аккумуляторным моющими пылесосами или устройствами для удаления сорняков Kärcher – аккумуляторы можно быстро и легко заменить,
                и пользоваться аппаратами в любое время и в любых условиях.
             </div>
           </div>
-          <div class="trend__col"><img src="./img/bg-cols-1.jpg" alt="bg-cols-1"></div>
+          <div class="trend__col wow slideInRight"><img src="./img/bg-cols-1.jpg" alt="bg-cols-1"></div>
         </div>
         <div class="trend trend--center trend--center-font">
-          <div class="trend__text">
+          <div class="trend__text wow fadeInUp">
             Продукты с аккумуляторами на 18 В идеально подходят для ухода за небольшими и средними садами и открытыми зонами, а для выполнения работ по очистке и ухода за садом специально созданы мощные устройства разных категорий с аккумуляторами на 36 В.</div>
         </div>
         <div class="trend trend--cols trend--cols-2">
-          <div class="trend__col">
+          <div class="trend__col wow slideInRight">
             <div class="trend__text">
               К тому же благодаря технологии Real Time не придется гадать, насколько еще хватит запаса аккумулятора. В отличие от световых диодов, в технике Karcher на встроенный ЖК-дисплей выводится детальная информация о состоянии аккумулятора и уровне заряда: оставшееся время
                работы в минутах поможет рассчитать, когда надо менять или заряжать батарею. А во время процесса зарядки ты будешь с точностью до
                минуты знать, когда можно будет приступить к работе и успеешь ли ты за это время выпить бутылочку чего-нибудь освежающего.
             </div>
           </div>
-          <div class="trend__col"><img src="./img/bg-cols-2.jpg" alt="bg-cols-2"></div>
+          <div class="trend__col wow slideInLeft"><img src="./img/bg-cols-2.jpg" alt="bg-cols-2"></div>
         </div>
       </div>
-      <div class="first-screen first-screen--generator js-fade" id="section-3">
+      <div class="first-screen first-screen--generator js-fade" id="generator">
         <div class="first-screen__flex">
           <div class="first-screen__bg"><img src="./img/bg-first.jpg" alt="bg-first"></div>
           <div class="first-screen__content">

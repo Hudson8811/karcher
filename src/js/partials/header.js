@@ -13,7 +13,7 @@ $(document).ready(function () {
 				$('.header__burger').removeClass('open');
 			}
 			link = $(this).attr('href');
-			to = $(link).offset().top;
+			to = $(link).offset().top - 50;
 			$('body, html').animate({
 				scrollTop: to
 			}, 800);

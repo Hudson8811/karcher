@@ -2,9 +2,7 @@
 	position: relative;
 
 	@media (min-width: $dMin) {
-		height: 100%;
 		overflow: hidden;
-		//height: calc(100vh - 73px);
 	}
 
 	&__flex {
@@ -64,7 +62,7 @@
 		padding: 249px 20px 15px;
 
 		@media (min-width: $dMin) {
-			padding: 0 76px;
+			padding: 1.8229vw 3.9583vw 4.1666vw;
 		}
 	}
 
@@ -77,8 +75,8 @@
 		color: $yellow;
 
 		@media (min-width: $dMin) {
-			font-size: 5.4vw;
-			line-height: 5.5vw;
+			font-size: 7.1354vw;
+			line-height: 6.979vw;
 		}
 
 		span {
@@ -134,8 +132,6 @@
 		width: 100%;
 		height: 100%;
 		padding: 49px;
-		border-radius: 50%;
-		background-color: $yellow;
 		font-family: 'Helvetica Neue Black';
 		font-size: 22px;
 		line-height: 23px;
@@ -144,10 +140,25 @@
 		position: absolute;
 		right: -2.81vw;
 		cursor: pointer;
-		transition: transform 0.3s ease;
 
-		&:hover {
+		&::before {
+			content: '';
+			border-radius: 50%;
+			background-color: $yellow;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			transition: transform 0.3s ease;
+		}
+
+		&:hover::before {
 			transform: scale(1.1);
+		}
+
+		p {
+			position: relative;
 		}
 
 		span {
@@ -176,7 +187,7 @@
 		position: absolute;
 		left: 20px;
 		bottom: 30px;
-		z-index: 2;
+		z-index: 20;
 		cursor: pointer;
 
 		@media (min-width: $dMin) {
@@ -211,6 +222,7 @@
 		position: absolute;
 		left: 9px;
 		bottom: 19px;
+		z-index: 19;
 		padding: 5px 5px 50px 5px;
 		border-radius: 25px;
 		opacity: 0;
@@ -279,11 +291,6 @@
 	}
 
 	&--generator {
-
-		@media (min-width: $dMin) {
-			display: none;
-		}
-
 		.first-screen {
 			display: none;
 
@@ -349,7 +356,7 @@
 				padding: 30px 20px;
 
 				@media (min-width: $dMin) {
-					padding: 0 4.48vw;
+					padding: 11.5625vw 4.48vw 7.8645vw;
 				}
 			}
 
@@ -426,10 +433,6 @@
 }
 
 .trends {
-	@media (min-width: $dMin) {
-		display: none;
-	}
-
 	&__title {
 		font-family: 'Helvetica Neue Black';
 		font-size: 23px;
@@ -517,16 +520,23 @@
 	}
 
 	&__grass {
+		position: relative;
 		height: 123px;
 		margin-top: 26px;
 
 		@media (min-width: $dMin) {
-			height: auto;
 			margin-top: 0;
+			height: 8.59375vw;
+		}
+
+		@media (min-width: $dMin) and (max-width: 1500px) {
+			height: 18.594vw;
 		}
 
 		img {
-			vertical-align: bottom;
+			width: 100%;
+			position: absolute;
+			bottom: 0;
 		}
 	}
 
@@ -538,6 +548,10 @@
 		@media (min-width: $dMin) {
 			top: 7.4vw;
 			bottom: auto;
+		}
+
+		@media (min-width: $dMin) and (max-width: 1500px) {
+			top: 16.4vw;
 		}
 
 		img {
