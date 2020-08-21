@@ -58,7 +58,7 @@ $(document).ready(function () {
 			}
 		});
 	}
-
+	
 	function checkAuth() {
 		$.ajax({
 			type: "POST",
@@ -66,6 +66,12 @@ $(document).ready(function () {
 			success: function(data) {
 				if (JSON.parse(data).hashcode != '' && JSON.parse(data).hashcode != undefined) {
 					hash = JSON.parse(data).hashcode;
+
+					$('.popup-share__socials').each(function () {
+                        var url = $(this).data('url');
+                        url += '&u='+encodeURIComponent(hash);
+                        $(this).attr('data-url', url);
+                    });
 					$('.popup-share__auth').hide();
 					$('.popup-share__share').show();
 				}
@@ -137,7 +143,7 @@ $(document).ready(function () {
 			window.open(socialTypes[socialType]+$slink,socialType,'width=500,height=500,resizable=yes,scrollbars=yes,status=yes');
 		} else {
 			if (hash === '') checkAuth();
-			$slink += '&u='+encodeURIComponent(hash);
+			//$slink += '&u='+encodeURIComponent(hash);
 			window.open(socialTypes[socialType]+$slink,socialType,'width=500,height=500,resizable=yes,scrollbars=yes,status=yes');
 			afterShare(socialType);
 		}
