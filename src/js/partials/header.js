@@ -5,6 +5,7 @@ $(document).ready(function () {
 	});
 
 	anchorScroll($('.anchor'));
+	anchorScroll($('.js-to-trends'));
 
 	function anchorScroll(e) {
 		e.click(function () {

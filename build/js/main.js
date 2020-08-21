@@ -78,7 +78,9 @@ if(css3AnimationIsSupported&&o.allowCss3Support){animate()}else{_startAnimationW
 /* my scripts */
 
 $(document).ready(function () {
-	new WOW().init();
+	if (window.matchMedia('(min-width: 1024px)').matches) {
+		new WOW().init();
+	}
 
 	popupInit($('.first-screen__circle-wrapper--press'));
 
@@ -233,6 +235,7 @@ $(document).ready(function () {
 	});
 
 	anchorScroll($('.anchor'));
+	anchorScroll($('.js-to-trends'));
 
 	function anchorScroll(e) {
 		e.click(function () {
