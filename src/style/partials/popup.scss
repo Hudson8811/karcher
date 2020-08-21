@@ -175,11 +175,7 @@
 		text-transform: uppercase;
 
 		@media (min-width: $dMin) {
-			font-size: 37px;
-		}
-
-		@media (min-width: $dMin) and (max-width: 1349px) {
-			font-size: 30px;
+			font-size: 1.927vw;
 		}
 
 		br {
@@ -250,11 +246,7 @@
 		margin-bottom: 34px;
 
 		@media (min-width: $dMin) {
-			font-size: 25px;
-		}
-
-		@media (min-width: $dMin) and (max-width: 1349px) {
-			font-size: 20px;
+			font-size: 1.3vw;
 		}
 
 		span {
@@ -358,14 +350,9 @@
 		padding: 20px;
 
 		@media (min-width: $dMin) {
-			font-size: 25px;
-			line-height: 30px;
-			padding: 44px 70px 0;
-		}
-
-		@media (min-width: $dMin) and (max-width: 1349px) {
-			font-size: 20px;
-			line-height: 24px;
+			font-size: 1.3vw;
+			line-height: 1.5625vw;
+			padding: 2.29vw 3.6458vw 0;
 		}
 
 		span {
