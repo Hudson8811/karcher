@@ -217,7 +217,10 @@ $(document).ready(function () {
 
 	});
 
+
 	function afterShare(social) {
+		$.fancybox.open('<div class="promocode"><div class="promocode__code">Ваш промокод на скидку <span>KarcherMaxim</span></div><div class="promocode__info">Промокод действителен только в официальном магазине <a href="https://www.karcher.ru/ru/" target="_blank">https://www.karcher.ru/ru/</a> до 30.09.2020 и распространяется только на бытовую технику, не суммируется с другими скидками и не распространяется на юридические лица.</div></div>');
+
 		$.ajax({
 			type: "POST",
 			url: "/new_share/",

@@ -378,3 +378,30 @@
 		}
 	}
 }
+
+
+
+.promocode{
+	border-radius: 20px;
+	max-width: 740px;
+	&__code{
+		font-size: 24px;
+		text-align: center;
+		span{
+			font-family: 'Helvetica Neue Black';
+			background-color: #ffee02;
+		}
+	}
+	&__info{
+		margin-top: 30px;
+		line-height: 1.2;
+		a{
+			background-color: #ffee02;
+			color: $black;
+			&:hover{
+				background-color: $black;
+				color: #ffee02;
+			}
+		}
+	}
+}
